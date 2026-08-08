@@ -3,7 +3,7 @@
 
   "categories": ["fashion"],
 
-  "time_gap_hours": 1,
+  "time_gap_hours": 0,
   "_time_gap_help": "Hours between posts.",
 
   "category_daily_limit": {
