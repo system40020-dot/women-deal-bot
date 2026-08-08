@@ -1,0 +1,36 @@
+name: Women's Garments Deals Bot
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+jobs:
+  post-deal:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run deals bot
+        env:
+          EKARO_API_KEY: ${{ secrets.EKARO_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python deals_bot.py
+
+      - name: Commit updated queue and state
+        run: |
+          git config --global user.name "women-deals-bot"
+          git config --global user.email "women-deals-bot@users.noreply.github.com"
+          git add queue.json posted_log.json state.json
+          git commit -m "Update deal queue and posting state" || echo "No changes to commit"
+          git push
