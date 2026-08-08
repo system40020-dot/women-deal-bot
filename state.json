@@ -1,9 +1,20 @@
 {
-  "last_post_utc": null,
+  "last_post_utc": "2026-08-08T19:13:37.738369+00:00",
   "daily_counts": {
     "date": "2026-08-09",
-    "counts": {}
+    "counts": {
+      "fashion": 1
+    }
   },
-  "price_history": {},
-  "recently_posted": {}
+  "price_history": {
+    "https://dl.flipkart.com/dl/gudwear-women-printed-anarkali-kurta/p/itma2b116da30413?pid=KTAGFXAR8FZJAFCM&lid=LSTKTAGFXAR8FZJAFCMMN8J4T&marketplace=FLIPKART&q=women+kurti&store=clo/cfv/cib/rkt&_refId=&_appId=CL": [
+      {
+        "price": 350,
+        "date": "2026-08-09"
+      }
+    ]
+  },
+  "recently_posted": {
+    "https://dl.flipkart.com/dl/gudwear-women-printed-anarkali-kurta/p/itma2b116da30413?pid=KTAGFXAR8FZJAFCM&lid=LSTKTAGFXAR8FZJAFCMMN8J4T&marketplace=FLIPKART&q=women+kurti&store=clo/cfv/cib/rkt&_refId=&_appId=CL": "2026-08-08T19:13:37.738152+00:00"
+  }
 }
