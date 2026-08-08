@@ -1,0 +1,14 @@
+{
+  "_instructions": "Add deals here. The bot posts ONE eligible entry per run (respecting your timing settings), converts the link via EK Affiliaters, then moves it to posted_log.json automatically. Just add new entries anytime -- no need to remove old ones, the bot handles that.",
+
+  "queue": [
+    {
+      "title": "Example: Women's Floral Kurti",
+      "price": 599,
+      "image_url": "https://example.com/product-image.jpg",
+      "product_url": "https://www.myntra.com/example-product-link",
+      "category": "fashion",
+      "discount": "40%"
+    }
+  ]
+}
