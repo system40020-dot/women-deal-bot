@@ -1,6 +1,9 @@
 {
   "last_post_utc": null,
-  "daily_counts": {"date": "", "counts": {}},
+  "daily_counts": {
+    "date": "2026-08-09",
+    "counts": {}
+  },
   "price_history": {},
   "recently_posted": {}
 }
