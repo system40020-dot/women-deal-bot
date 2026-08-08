@@ -11,7 +11,7 @@
   },
 
   "active_hours_enabled": true,
-  "active_hours_start": "07:00",
+  "active_hours_start": "00:00",
   "active_hours_end": "23:00",
   "_active_hours_help": "Bot only posts between these times (IST). Outside this window it stays silent.",
 
