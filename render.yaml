@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: women-deal-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python deals_bot.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
