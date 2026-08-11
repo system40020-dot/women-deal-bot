@@ -1,3 +1,17 @@
+from threading import Thread
+from flask import Flask
+
+app = Flask("")
+
+
+@app.route("/")
+def home():
+  return "Bot is active and running 24/7!"
+
+
+def run_web():
+  app.run(host="0.0.0.0", port=10000)
+    
 import asyncio
 import logging
 from aiogram import Bot, Dispatcher, F, Router
@@ -357,7 +371,11 @@ async def main():
     logging.info("Bot and scheduler started successfully.")
 
     await dp.start_polling(bot)
+if name == "main":
+  web_thread = Thread(target=run_web)
+  web_thread.start()
 
+  asyncio.run(main())
 
 if __name__ == "__main__":
     asyncio.run(main())
