@@ -15,7 +15,7 @@ from aiogram.types import (
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 # ==================== CONFIGURATION ====================
-BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN_HERE"
+BOT_TOKEN = "8715773258:AAG_diIeT6Jy7Pesk7aefqLJ_d8ANYWlxmI"
 CHANNEL_ID = "@your_channel_or_chat_id"
 
 logging.basicConfig(level=logging.INFO)
